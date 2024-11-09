@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css">
+    <!---google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <!--icons link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="Contactstyle.css">
+    </head>
+    <body>
+        <div class="header">
+            <h2>Get in touch</h2>
+        </div>
+        <div class="return-button">
+            <button class="return-btn">
+                <a href="RDC.html">
+                    <i class="bx bx-x"></i>
+                </a>
+            </button>
+        </div>
+        <div class="contact-form">
+            <form action ="submit-form.php?to=info@rcdafrica.com" method="post">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>    
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
